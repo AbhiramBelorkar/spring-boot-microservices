@@ -34,7 +34,7 @@ The technologies used in this project are:
 
 ## 🛠️ Workflow
 
-![Microservices Workflow](workflow.png)
+![Microservices Workflow](workflow.PNG)
 
 ---
 
