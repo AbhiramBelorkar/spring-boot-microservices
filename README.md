@@ -1,14 +1,23 @@
-# Spring-boot-microservices
-This repository contains the latest source code of the spring-boot-microservices project
+> **Note:** The parent folder is `microservices-connect`.
 
-# Services Overview
+# Spring-boot-microservices
+
+This repository contains the latest source code of the **spring-boot-microservices** project.
+
+---
+
+## 🗂️ Services Overview
+
 - Product Service
 - Order Service
 - Inventory Service
 - Notification Service
 - API Gateway using Spring Cloud Gateway MVC
 
-# Tech Stack
+---
+
+## 🚀 Tech Stack
+
 The technologies used in this project are:
 
 - Spring Boot
@@ -17,7 +26,15 @@ The technologies used in this project are:
 - Kafka
 - Keycloak
 - Test Containers with Wiremock
-- Grafana Stack (Prometheus, Grafana, Loki and Tempo)
+- Grafana Stack (Prometheus, Grafana, Loki, Tempo)
 - API Gateway using Spring Cloud Gateway MVC
 - Kubernetes
+
+---
+
+## 🛠️ Workflow
+
+![Microservices Workflow](workflow.png)
+
+---
 
