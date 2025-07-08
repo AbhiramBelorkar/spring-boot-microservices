@@ -25,7 +25,7 @@ public class OrderService {
     private final WebClient.Builder webClientBuilder;
     private final KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate;
 
-    public void placeOrder(OrderRequest orderRequest){
+    public String placeOrder(OrderRequest orderRequest){
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
 
@@ -54,6 +54,7 @@ public class OrderService {
         if(allProductsInStock){
             orderRepository.save(order);
             kafkaTemplate.send("notificationTopic", new OrderPlacedEvent(order.getOrderNumber()));
+            return "Order Placed.";
         } else{
             throw new IllegalArgumentException("Product is not in stock, Please try again later.");
         }
